@@ -13,7 +13,8 @@
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
 
     <div class="header-inner">
-      <a href="index.html" class="logo-word">Soii·a <span class="sparkle" aria-hidden="true">✦</span></a>
+      <a href="booking.html" class="logo-word"><img src="logo.png" 
+  class="logo-img"></a>
 
       <nav class="main-nav" aria-label="Primary">
         <ul>
@@ -39,126 +40,108 @@
 
   <!-- ===================== Two-column booking layout ===================== -->
   <section id="booking-columns">
-    <div class="wrap">
+  <div class="wrap">
 
-      <div class="consult-intro">
-        <h1>Ready to Book Your Tattoo or Need to Consult?</h1>
-        <p>
-          Visit me at Bondi Beach studio in person, where we can consult
-          any of your concerns. Please contact me and schedule your
-          consultation.
-        </p>
-        <div class="consult-photo photo-frame" role="img" aria-label="Photo of Soiia tattooing a client">
-          Replace with photo:<br>Soiia at work in the studio
-        </div>
+    <div class="consult-intro">
+      <h1>READY TO BOOK or need to Consult?</h1>
+      <p>Visit me at my Bondi Beach studio for a personalised consultation, where we can discuss your ideas, answer any questions, and find the best solution for you.</p>
+      <div class="hero-photo photo-frame">
+        <img src="metattooing.jpeg" alt="Soiia tattooing a client in the studio" class="frame-img">
       </div>
-
-      <div class="inquiry-panel">
-        <h2>Tattoo Inquiry</h2>
-        <form id="booking-form" action="mailto:hello@soiia.com" method="post">
-
-          <div class="form-row">
-            <label for="full-name">Full Name:</label>
-            <input type="text" id="full-name" name="full-name" placeholder="Your full name" required>
-          </div>
-
-          <div class="form-row">
-            <label for="email">E-mail Address:</label>
-            <input type="email" id="email" name="email" placeholder="youremail@example.com" required>
-          </div>
-
-          <div class="form-row">
-            <label for="phone">Phone number:</label>
-            <input type="tel" id="phone" name="phone" placeholder="0412 345 678">
-          </div>
-
-          <div class="form-row">
-            <label for="placement">Tattoo Design/Placement:</label>
-            <input type="text" id="placement" name="placement" placeholder="e.g. Forearm floral piece, upper arm, etc." required>
-          </div>
-
-          <div class="form-row">
-            <label for="idea">Design Idea:</label>
-            <textarea id="idea" name="idea" placeholder="Tell me about your idea..." required></textarea>
-          </div>
-
-          <div class="form-row">
-            <label for="reference-photos">Reference Photos (optional):</label>
-            <label class="file-upload-label" for="reference-photos">&#8593; Upload Files</label>
-            <input type="file" id="reference-photos" name="reference-photos" accept="image/*" multiple>
-          </div>
-
-          <div class="form-row">
-            <label for="preferred-days">Preferred Days:</label>
-            <select id="preferred-days" name="preferred-days" required>
-              <option value="">Select your preferred days</option>
-              <option value="weekday-morning">Weekday mornings</option>
-              <option value="weekday-afternoon">Weekday afternoons</option>
-              <option value="saturday">Saturday</option>
-              <option value="flexible">Flexible / not sure</option>
-            </select>
-          </div>
-
-          <p class="form-note">
-            This form is a front-end prototype and doesn't currently submit
-            to a live inbox — connect it to a form service or backend before
-            launch.
-          </p>
-
-          <button type="submit" class="btn btn-primary form-submit">Submit</button>
-        </form>
-      </div>
-
-      <div class="faq-section" id="faq">
-        <h2>Frequently Asked Questions</h2>
-
-        <details class="faq-item">
-          <summary>Where are you located?</summary>
-          <p>The studio is based in Bondi Beach, NSW. Full address details are shared once your consultation is confirmed.</p>
-        </details>
-
-        <details class="faq-item">
-          <summary>Is a deposit required?</summary>
-          <p>Yes — a non-refundable deposit secures your booking once the design and date are confirmed. It's deducted from the final session cost.</p>
-        </details>
-
-        <details class="faq-item">
-          <summary>How old do I have to be to get a tattoo?</summary>
-          <p>You must be 18 or older with valid photo ID. No exceptions, regardless of parental consent.</p>
-        </details>
-
-        <details class="faq-item">
-          <summary>Can I see the design before my appointment?</summary>
-          <p>Yes — final artwork is shared for approval ahead of your session, with time for any small adjustments.</p>
-        </details>
-
-        <p class="faq-more">Still have questions? <a href="mailto:hello@soiia.com">Send me an e-mail!</a></p>
-      </div>
-
-      <div class="cta-inline">
-        <h2>Ready to Start Feeling More<br>Confident in Your Skin?</h2>
-        <a href="#booking-form" class="btn btn-primary">Contact Me Today!</a>
-      </div>
-
     </div>
-  </section>
 
-  <!-- ===================== Footer ===================== -->
-  <footer id="site-footer">
+    <div class="inquiry-panel">
+      <h2>Tattoo Inquiry</h2>
+      <form id="booking-form" action="mailto:hello@soiia.com" method="post">
+        <!-- all your form fields stay exactly the same -->
+        <div class="form-row">
+          <label for="full-name">Full Name:</label>
+          <input type="text" id="full-name" name="full-name" placeholder="Your full name" required>
+        </div>
+        <div class="form-row">
+          <label for="email">E-mail Address:</label>
+          <input type="email" id="email" name="email" placeholder="youremail@example.com" required>
+        </div>
+        <div class="form-row">
+          <label for="phone">Phone number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="0412 345 678">
+        </div>
+        <div class="form-row">
+          <label for="placement">Tattoo Design/Placement:</label>
+          <input type="text" id="placement" name="placement" placeholder="e.g. Forearm floral piece, upper arm, etc." required>
+        </div>
+        <div class="form-row">
+          <label for="idea">Design Idea:</label>
+          <textarea id="idea" name="idea" placeholder="Tell me about your idea..." required></textarea>
+        </div>
+        <div class="form-row">
+          <label for="reference-photos">Reference Photos (optional):</label>
+          <label class="file-upload-label" for="reference-photos">&#8593; Upload Files</label>
+          <input type="file" id="reference-photos" name="reference-photos" accept="image/*" multiple>
+        </div>
+        <div class="form-row">
+          <label for="preferred-days">Preferred Days:</label>
+          <select id="preferred-days" name="preferred-days" required>
+            <option value="">Select your preferred days</option>
+            <option value="weekday-morning">Weekday mornings</option>
+            <option value="weekday-afternoon">Weekday afternoons</option>
+            <option value="saturday">Saturday</option>
+            <option value="flexible">Flexible / not sure</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit">Submit</button>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="faq-section" id="faq">
+    <h2>FREQUENTLY ASKED QUESTIONS</h2>
+    <details class="faq-item">
+      <summary>Where are you located?</summary>
+      <p>The studio is based in Bondi Beach, NSW. Full address details are shared once your consultation is confirmed.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Is a deposit required?</summary>
+      <p>Yes — a non-refundable deposit secures your booking once the design and date are confirmed. It's deducted from the final session cost.</p>
+    </details>
+    <details class="faq-item">
+      <summary>How old do I have to be to get a tattoo?</summary>
+      <p>You must be 18 or older with valid photo ID. No exceptions, regardless of parental consent.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Can I see the design before my appointment?</summary>
+      <p>Yes — final artwork is shared for approval ahead of your session, with time for any small adjustments.</p>
+    </details>
+    <p class="faq-more">Still have questions? <a href="mailto:hello@soiia.com">Send me an e-mail!</a></p>
+  </div>
+
+  <div class="cta-inline">
+    <h2>READY TO START FEELING<br>CONFIDENT IN YOUR SKIN?</h2>
+    <a href="mailto:hello@soiia.com" class="btn btn-primary">Contact Me Today!</a>
+  </div>
+
+</section>
+ <footer id="site-footer">
     <div class="wrap">
       <div class="footer-top">
         <div class="footer-brand">
-          <p class="logo-word">Soii·a <span class="sparkle" aria-hidden="true">✦</span></p>
           <ul class="footer-contact">
             <li><a href="mailto:hello@soiia.com">hello@soiia.com</a></li>
             <li><a href="tel:+61400123456">+61 400 123 456</a></li>
             <li>Bondi Beach, NSW</li>
           </ul>
           <div class="footer-social">
-            <a href="https://instagram.com/soiia" target="_blank" rel="noopener" aria-label="Soiia on Instagram">IG</a>
-            <a href="https://tiktok.com/@soiia" target="_blank" rel="noopener" aria-label="Soiia on TikTok">TT</a>
-            <a href="https://pinterest.com/soiia" target="_blank" rel="noopener" aria-label="Soiia on Pinterest">P</a>
-            <a href="mailto:hello@soiia.com" aria-label="Email Soiia">@</a>
+            <a href="https://instagram.com/soiia" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+              </svg>
+            </a>
+            <a href="https://tiktok.com/@soiia" class="social-icon" aria-label="TikTok" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.592 2.592 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z"/>
+              </svg>
+            </a>
           </div>
         </div>
 
