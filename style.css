@@ -56,7 +56,7 @@ img, svg { display: block; max-width: 100%; }
 
 .sparkle { color: var(--accent); display: inline-block; }
 
-/* ---------- Photo placeholders (swap for real <img> once you have photos) ---------- */
+/* Photo placeholders */
 .photo-frame {
   background: repeating-linear-gradient(135deg, #150a20, #150a20 10px, #1c0e2b 10px, #1c0e2b 20px);
   border-radius: 6px;
@@ -79,7 +79,7 @@ img, svg { display: block; max-width: 100%; }
   max-width: 1120px;
   margin: 0 auto;
 }
-/* ---------- Header ---------- */
+/* Header */
 #site-header {
   position: sticky;
   top: 0;
@@ -138,10 +138,10 @@ img, svg { display: block; max-width: 100%; }
 
 .nav-book:hover { color: var(--white) !important; background: var(--gradient-cta); }
 
-/* mobile-only controls, hidden on desktop */
+/* mobile-only controls*/
 .mobile-controls, .nav-toggle, .mobile-nav-panel { display: none; }
 
-/* ---------- Hero ---------- */
+/*Hero*/
 #hero .wrap {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -160,7 +160,7 @@ img, svg { display: block; max-width: 100%; }
   border-left: 3px solid var(--magenta);
   padding-left: 1rem;
   color: var(--muted);
-  font-size: 1.05rem;
+  font-size: 1.30rem;
   max-width: 40ch;
   margin-bottom: 2rem;
 }
@@ -207,7 +207,7 @@ img, svg { display: block; max-width: 100%; }
   background: var(--panel-border);
 }
 
-/* ---------- About ---------- */
+/*About*/
 #about .wrap {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -237,7 +237,7 @@ img, svg { display: block; max-width: 100%; }
 
 .about-photos .photo-frame { aspect-ratio: 3 / 4; }
 
-/* ---------- Portfolio gallery ---------- */
+/* Portfolio gallery*/
 #portfolio { padding-bottom: 4rem; }
 
 .gallery-grid {
@@ -248,7 +248,7 @@ img, svg { display: block; max-width: 100%; }
 
 .gallery-grid .photo-frame { aspect-ratio: 1 / 1.15; }
 
-/* ---------- CTA banner ---------- */
+/*CTA banner*/
 .cta-banner {
   background: var(--gradient-banner);
   border-top: 1px solid var(--panel-border);
@@ -262,7 +262,7 @@ img, svg { display: block; max-width: 100%; }
   margin-bottom: 1.5rem;
 }
 
-/* ---------- Footer ---------- */
+/* Footer */
 #site-footer { padding: 3rem 0 0; }
 
 .footer-top {
@@ -358,7 +358,7 @@ img, svg { display: block; max-width: 100%; }
 
 .consult-photo.photo-frame { aspect-ratio: 3 / 4; }
 
-/* FAQ accordion */
+/* FAQ */
 #faq {
   max-width: 1170px;
   width: 100%;
@@ -416,7 +416,7 @@ img, svg { display: block; max-width: 100%; }
   font-size: 1rem;
 }
 
-/* CTA banner — full width, no risky vw hack needed since it's outside .wrap now */
+/* CTA banner */
 .cta-inline {
   width: 100%;
   margin-top: 2rem;
@@ -498,7 +498,7 @@ img, svg { display: block; max-width: 100%; }
   justify-content: center;
 }
 
-/* ---------- Responsive ---------- */
+/* Responsive */
 @media (max-width: 900px) {
   .main-nav, .header-inner .nav-book { display: none; }
   .mobile-controls { display: flex; align-items: center; gap: 0.75rem; }
