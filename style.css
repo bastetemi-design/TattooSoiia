@@ -198,23 +198,21 @@ img, svg { display: block; max-width: 100%; }
 .divider-row {
   display: flex;
   align-items: center;
-  gap: 1rem;
   justify-content: center;
-  padding: 0 0 3rem;
-  color: var(--accent);
-  font-size: 0.8rem;
+  gap: 1rem;
+  padding: 2rem 0;
+  color: #b47bff;
+  font-size: 1rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
 }
 
-.divider-row::before, .divider-row::after {
-  content: '';
+.divider-line {
   flex: 1;
-  max-width: 220px;
+  max-width: 365px;
   height: 1px;
-  background: var(--panel-border);
+  background-color: #3a2455;
 }
-
 #about {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -297,36 +295,82 @@ img, svg { display: block; max-width: 100%; }
 .gallery-grid .photo-frame { aspect-ratio: 1 / 1.15; }
 
 /*CTA banner*/
+
+
+
 .cta-banner {
-  background: var(--gradient-banner);
-  border-top: 1px solid var(--panel-border);
-  border-bottom: 1px solid var(--panel-border);
+  background: linear-gradient(160deg, #2E005D 0%, #17021f 60%, #1e1d1d 100%);
   text-align: center;
   padding: 4rem 2rem;
 }
 
 .cta-banner h2 {
-  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  color: #ffffff;
+  font-size: 1.8rem;
   margin-bottom: 1.5rem;
+  line-height: 1.3;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 14px 28px;
+  background: linear-gradient(90deg, #8E008B, #FF6200);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
 }
 
 /* Footer */
-#site-footer { padding: 3rem 0 0; }
+.footer {
+  padding: 3rem 2rem 2rem;
+}
 
 .footer-top {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
-.footer-contact li {
-  color: var(--muted);
+.footer-brand p {
+  color: #cccccc;
   font-size: 0.9rem;
   margin-bottom: 0.4rem;
 }
 
-.footer-contact a { color: var(--muted); }
-.footer-contact a:hover { color: var(--accent); }
+.footer-brand a {
+  color: #cccccc;
+  text-decoration: none;
+}
+
+.footer-brand a:hover {
+  color: #b47bff;
+}
+
+.footer-social {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.footer-social a {
+  width: 34px;
+  height: 34px;
+  border: 1px solid #3a2455;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.footer-social a:hover {
+  border-color: #b47bff;
+  color: #b47bff;
+}
 
 .footer-links {
   display: flex;
@@ -336,46 +380,20 @@ img, svg { display: block; max-width: 100%; }
 }
 
 .footer-links a {
+  color: #ffffff;
+  text-decoration: none;
   font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
-.footer-social {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 0.75rem;
-  margin-top: 1rem;
-}
-
-.footer-social a {
-  width: 34px;
-  height: 34px;
-  border: 1px solid var(--panel-border);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.9rem;
-}
-
-
-
-.footer-social a:hover { border-color: var(--accent); }
-
 .footer-bottom {
-  padding: 1.25rem 0;
+  padding: 1.25rem 0 0;
   text-align: center;
   font-size: 0.78rem;
-  color: var(--muted);
+  color: #cccccc;
 }
-
-#site-footer {
-  padding: 1.2rem 0; 
-}
-
 /* ---------- Booking page: two-column layout ---------- */
 #booking-columns .wrap {
   display: grid;
@@ -609,10 +627,9 @@ img, svg { display: block; max-width: 100%; }
   html { scroll-behavior: auto; }
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px; height: 1px;
-  overflow: hidden;
-  clip: rect(0,0,0,0);
-  white-space: nowrap;
+#portfolio h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
 }
